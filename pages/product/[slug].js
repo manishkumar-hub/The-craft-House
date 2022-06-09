@@ -54,7 +54,7 @@ const Post = ({ addtoCart, product, variants, buyNow }) => {
   const refreshVariant = (newcolor) => {
     console.log(newcolor)
     console.log(variants[newcolor].slug)
-    let url = `http://localhost:3000/product/${variants[newcolor]["slug"]}`;
+    let url = `${process.env.NEXT_PUBLIC_HOST}/product/${variants[newcolor]["slug"]}`;
     // window.location = url;
     router.push(url);
   }
@@ -168,7 +168,7 @@ const Post = ({ addtoCart, product, variants, buyNow }) => {
 
 export async function getServerSideProps(context) {
 
-  const res = await fetch(`http://localhost:3000/api/getProducts`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_HOST }/api/getProducts`)
   const data = await res.json()
   // console.log(data.products);
   let arr = []
