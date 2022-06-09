@@ -56,7 +56,7 @@ export async function getServerSideProps(context) {
   // return {
   //   props: {products}, // will be passed to the page component as props
   // }
-  const res = await fetch(`${process.env.NEXT_PUBLIC_HOST }/api/getProducts`)
+  const res = await fetch(`https://the-craft-house.vercel.app//api/getProducts`)
   const data = await res.json()
   // console.log(data.products)
   let products = data.products.filter(x => x.category == "home decor");
