@@ -1,8 +1,8 @@
 import connectDb from "../../middleware/mongoose"
 import Order from "../../models/Order";
-import Product from "../../models/product";
+import Product from "../../models/Product";
 import Router from  'next/router'
-// import { request } from "http";
+
 
 const https = require('https');
 const PaytmChecksum = require('paytmchecksum');
