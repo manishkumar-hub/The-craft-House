@@ -36,7 +36,6 @@
 <h3 align="center">The Craft House</h3>
 
   <p align="center">
-    project_description
     <br />
     <a href="https://github.com/manishkumar-hub/The-craft-House"><strong>Explore the docs »</strong></a>
     <br />
