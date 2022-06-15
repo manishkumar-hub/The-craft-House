@@ -48,21 +48,21 @@ export async function getServerSideProps(context) {
   const data = await res.json()
 
   let products = data.products.filter(x => x.category == "Embroidery");
-  let tshirts = {};
+  let variant = {};
   for (let item of products) {
-    if (item.title in tshirts) {
-      if (!tshirts[item.title].color.includes(item.color) && item.availableQty > 0) {
-        tshirts[item.title].color.push(item.colour)
+    if (item.title in variant) {
+      if (!variant[item.title].color.includes(item.color) && item.availableQty > 0) {
+        variant[item.title].color.push(item.colour)
       }
     }
     else {
-      tshirts[item.title] = JSON.parse(JSON.stringify(item))
+      variant[item.title] = JSON.parse(JSON.stringify(item))
       if (item.availableQty > 0) {
-        tshirts[item.title].color = [item.colour]
+        variant[item.title].color = [item.colour]
 
       }
     }
-    products = tshirts;
+    products = variant;
   }
   // Pass data to the page via props
   return { props: { products } }
