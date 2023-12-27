@@ -106,12 +106,12 @@ To have a look of website Visit : <a href='https://the-craft-house.vercel.app/'>
 
 DEMO Screenshots 
 
-<img src="Screenshots/Screenshot (14).png" alt="im" >
+<img src="https://i.postimg.cc/xCV8K4tL/Screenshot-14.png" alt="im" >
 <br>
 
-<img src="Screenshots/Screenshot (15).png" alt="im" >
-<img src="Screenshots/Screenshot (16).png" alt="im" >
-<img src="Screenshots/Screenshot (17).png" alt="im" >
+<img src="https://i.postimg.cc/FsHRgcgC/Screenshot-15.png" alt="im" >
+<img src="https://i.postimg.cc/1RHXqM6N/Screenshot-16.png" alt="im" >
+<img src="https://i.postimg.cc/KjZYWgXz/Screenshot-17.png" alt="im" >
 
 
 <!-- GETTING STARTED -->
